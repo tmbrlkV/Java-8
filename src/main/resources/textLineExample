@@ -1,0 +1,17 @@
+String[] a = {"one", "two", "three"};
+Arrays.sort(a, (s1, s2) -> s1.length() - s2.length()); //type inference
+executorService.execute(() -> doSomething()); //runnable
+
+new Something() {
+    SomeType someMethod(args) {
+        body
+    }
+}
+
+(args) -> {body}
+
+Method references:
+1) Static - RefType::staticMethod (args) -> RefType.staticMethod(args)
+2) Bound Instance expr::instMethod (args) -> expr.instMethod(args)
+3) Unbound Instance RefType::instMethod (arg0, rest) -> arg0.instMethod(rest) //rest: (args w/o arg0) (s1.compareTo(s2))
+4) Constructor ClassName::new (args) -> new ClassName(args)

@@ -1,0 +1,5 @@
+T -> R  - Function<T, R>
+(int, int) -> int - IntBinaryOperator
+T -> void  - Consumer<T>
+() -> T - Supplier<T>
+(T, U) -> R - BiFunction<T, U, R>
